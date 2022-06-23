@@ -1,0 +1,47 @@
+{
+  "project_info": {
+    "project_number": "935227984837",
+    "project_id": "habit-c6008",
+    "storage_bucket": "habit-c6008.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:935227984837:android:383aa7fc643bdfd54599ac",
+        "android_client_info": {
+          "package_name": "com.baytar.elektron.habitapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "935227984837-4uhhrur701kda44rg3bgncu3geo8987c.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.baytar.elektron.habitapp",
+            "certificate_hash": "a7c808eefcfb6cf71d5593dd700daf96c9fce5aa"
+          }
+        },
+        {
+          "client_id": "935227984837-vrjks7ed8d1u4jqc4jbvuo9u4i2q5o0d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAjcmTnVdpSfAIGmacgOEfgTnqZ-t1mlks"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "935227984837-vrjks7ed8d1u4jqc4jbvuo9u4i2q5o0d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

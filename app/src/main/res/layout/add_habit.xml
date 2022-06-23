@@ -1,0 +1,407 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/gainsboro"
+    android:id="@+id/constraint">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginBottom="10dp"
+        android:orientation="vertical"
+        android:visibility="visible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back_add_habit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_weight="0"
+                app:srcCompat="@drawable/ic_baseline_arrow_back_ios_new_24" />
+
+            <TextView
+                android:id="@+id/textView64"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginBottom="15dp"
+                android:text="Create New Habit"
+                android:textColor="@color/midnightblue"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/pomodoro_button">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/textView63"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/save_drink"
+                    android:gravity="center"
+                    android:text="NAME"
+                    android:textAllCaps="true"
+                    android:textColor="@color/midnightblue" />
+
+                <EditText
+                    android:id="@+id/habit_name"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="40dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="40dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_check_black_24dp"
+                    android:ems="10"
+                    android:gravity="center"
+                    android:hint="e.g., Drink Water"
+                    android:inputType="textPersonName"
+                    android:minHeight="48dp"
+                    android:paddingTop="10dp"
+                    android:paddingBottom="10dp"
+                    android:textColor="@color/midnightblue"
+                    android:textSize="14sp" />
+
+                <TextView
+                    android:id="@+id/iconAndColor"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/save_drink"
+                    android:gravity="center"
+                    android:text="ICON AND COLOR"
+                    android:textAllCaps="true"
+                    android:textColor="@color/midnightblue" />
+
+                <ImageView
+                    android:id="@+id/imageView6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginBottom="20dp"
+                    android:background="@drawable/ic_check_black_24dp"
+                    android:paddingTop="5dp"
+                    app:srcCompat="@drawable/ic_noun_hand_cursor_1038540" />
+
+                <TextView
+                    android:id="@+id/DaysOfTheWeek"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/save_drink"
+                    android:gravity="center"
+                    android:text="DAYS OF THE WEEK"
+                    android:textAllCaps="true"
+                    android:textColor="@color/midnightblue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/sunday_add"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_curve"
+                        android:gravity="center"
+                        android:text="s"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/monday_add"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_curve"
+                        android:gravity="center"
+                        android:text="m"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/tuesday_add"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_curve"
+                        android:gravity="center"
+                        android:text="t"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/wendsday_add"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_curve"
+                        android:gravity="center"
+                        android:text="w"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/thursday_add"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_curve"
+                        android:gravity="center"
+                        android:text="t"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/friday_add"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="5dp"
+                        android:layout_weight="0"
+                        android:background="@drawable/ic_curve"
+                        android:gravity="center"
+                        android:text="f"
+                        android:textSize="20sp" />
+
+                    <TextView
+                        android:id="@+id/saturday_add"
+                        android:layout_width="43dp"
+                        android:layout_height="43dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_curve"
+                        android:gravity="center"
+                        android:text="s"
+                        android:textSize="20sp" />
+                </LinearLayout>
+
+                <TextView
+                    android:id="@+id/TimeOfDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/save_drink"
+                    android:gravity="center"
+                    android:text="TIME OF DAY"
+                    android:textAllCaps="true"
+                    android:textColor="@color/midnightblue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/textView77"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_check_black_24dp"
+                        android:drawableLeft="@drawable/ic_noun_clock_2608558"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:paddingStart="38dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="38dp"
+                        android:paddingBottom="7dp"
+                        android:text="Anytime"
+                        android:textColor="@color/midnightblue" />
+
+                    <TextView
+                        android:id="@+id/textView78"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_check_black_24dp"
+                        android:drawableLeft="@drawable/morning"
+                        android:drawablePadding="8dp"
+                        android:gravity="center"
+                        android:paddingStart="37dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="37dp"
+                        android:paddingBottom="7dp"
+                        android:text="Morning" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:orientation="horizontal">
+
+                    <TextView
+                        android:id="@+id/addHabit_afternoon"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginEnd="10dp"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_check_black_24dp"
+                        android:drawableLeft="@drawable/afternoon"
+                        android:drawablePadding="7dp"
+                        android:duplicateParentState="false"
+                        android:gravity="center"
+                        android:includeFontPadding="false"
+                        android:paddingStart="30dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="29dp"
+                        android:paddingBottom="7dp"
+                        android:text="Afternoon"
+                        android:textColor="@color/midnightblue" />
+
+                    <TextView
+                        android:id="@+id/addHabit_night"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@drawable/ic_check_black_24dp"
+                        android:drawableLeft="@drawable/night"
+                        android:gravity="center"
+                        android:paddingStart="47dp"
+                        android:paddingTop="7dp"
+                        android:paddingEnd="47dp"
+                        android:paddingBottom="7dp"
+                        android:text="Night" />
+                </LinearLayout>
+                <TextView
+                    android:id="@+id/reminder"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/save_drink"
+                    android:gravity="center"
+                    android:text="REMINDER"
+                    android:textAllCaps="true"
+                    android:textColor="@color/midnightblue" />
+
+                <ImageView
+                    android:id="@+id/imageView28"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:layout_marginTop="20dp"
+                    android:background="@drawable/ic_check_black_24dp"
+                    android:padding="2dp"
+                    app:srcCompat="@drawable/ic_baseline_add_24" />
+                <TextView
+                    android:id="@+id/timesPerDay"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginTop="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:background="@drawable/save_drink"
+                    android:gravity="center"
+                    android:text="Times per Day"
+                    android:textAllCaps="true"
+                    android:textColor="@color/midnightblue" />
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="100dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_marginEnd="100dp"
+                    android:orientation="horizontal">
+
+                    <ImageView
+                        android:id="@+id/minus_addhabit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center_vertical"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/ic_check_black_24dp"
+                        android:paddingStart="2dp"
+                        android:paddingTop="5dp"
+                        android:paddingEnd="2dp"
+                        app:srcCompat="@drawable/minus" />
+
+                    <TextView
+                        android:id="@+id/timesAddHabit"
+                        android:layout_width="82dp"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="10dp"
+                        android:background="@drawable/ic_check_black_24dp"
+                        android:gravity="center"
+                        android:text="1"
+                        android:textSize="22sp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:id="@+id/add_addhabit"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/ic_check_black_24dp"
+                        android:padding="2dp"
+                        app:srcCompat="@drawable/ic_baseline_add_24" />
+
+                </LinearLayout>
+
+                <Button
+                    android:id="@+id/create_add"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginStart="75dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_marginEnd="75dp"
+                    android:layout_marginBottom="30dp"
+                    android:background="@drawable/drink_button"
+                    android:text="CREATE"
+                    android:textColor="@color/clock"
+                    android:textSize="20sp"
+                    android:textStyle="bold" />
+            </LinearLayout>
+        </ScrollView>
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PreferenceScreen xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:gravity="center"
+    android:theme="@style/Theme.AppCompat.Light">
+    <PreferenceCategory android:title="Personal Data">
+
+        <ListPreference
+            android:defaultValue="male"
+            android:entries="@array/gender"
+            android:entryValues="@array/gender"
+            android:icon="@drawable/ic_gender"
+            android:key="Gender"
+            app:useSimpleSummaryProvider="true"
+            android:title="Gender" />
+        <ListPreference
+            android:entries="@array/weight"
+            android:defaultValue="kg"
+            android:entryValues="@array/weight"
+            android:icon="@drawable/ic_kg"
+            android:key="kg"
+            app:useSimpleSummaryProvider="true"
+            android:title="Weight  unit" />
+        <EditTextPreference
+            android:defaultValue="70"
+            android:icon="@drawable/ic_weight"
+            android:key="weight"
+            android:inputType="number"
+            android:digits="0123456789"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            app:useSimpleSummaryProvider="true"
+            android:title="Weight" />
+
+    </PreferenceCategory>
+    <PreferenceCategory android:title="Other Data">
+        <EditTextPreference
+            android:defaultValue="60"
+            android:icon="@drawable/ic_exercise"
+            android:key="exercise"
+            android:inputType="numberDecimal"
+            android:digits="0123456789"
+            android:selectAllOnFocus="true"
+            android:singleLine="true"
+            app:useSimpleSummaryProvider="true"
+            android:title="@string/exercise" />
+    </PreferenceCategory>
+</PreferenceScreen>

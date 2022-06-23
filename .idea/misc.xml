@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/afternoon.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/book_background.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/button_background.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/call_friend.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/circular_button.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/drink_button.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/drink_icon.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/emoji.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/glass_changer.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/good_button.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/gratitude.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/habit_academy.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_add_circle_black_24dp.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_ads_z_tasar_m__3_.xml" value="0.296" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_ads_z_tasar_m__4_.xml" value="0.296" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_ba_l_qs_z_dizayn__13_.xml" value="0.296" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_ba_l_qs_z_dizayn__14_.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_add_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_arrow_back_ios_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_arrow_back_ios_new_24.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_article_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_auto_stories_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_autorenew_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_bookmark_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_call_24.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_circle_24.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_door_back_24.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_self_improvement_24.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_settings_24.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_baseline_stop_24.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_check_black_24dp.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_cm.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_coke.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_curve.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_drop.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_noun_circle_chart_2602377.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_noun_clock_2608558.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_noun_edit_1071793.xml" value="0.37447916666666664" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_noun_edit_1213162.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_noun_hand_cursor_1038540.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_noun_time_3660447.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/ic_noun_timer_3550863.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/minus.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/mood_border_text.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/mood_plus.xml" value="0.296" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/mood_text_background.xml" value="0.296" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/morning.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/night.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/pause.xml" value="0.296" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/pomodoro_back.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/pomodoro_button.xml" value="0.3365740740740741" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/save_drink.xml" value="0.3728205128205128" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/drawable/statistic.xml" value="0.37864583333333335" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout-v26/fragment_home.xml" value="0.3491847826086957" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout-v29/activity_main.xml" value="0.33" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/activity_main.xml" value="0.25" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/add_habit.xml" value="0.33" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/drink_water.xml" value="0.3491847826086957" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/fragment_home.xml" value="0.3491847826086957" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/fragment_learn.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/fragment_setting.xml" value="0.14402173913043478" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/gratitude.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/gratitude_save.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/item_view_pager.xml" value="0.22894736842105262" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/pomodoro.xml" value="0.22894736842105262" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/silence.xml" value="0.23777173913043478" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/layout/walk.xml" value="0.3491847826086957" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/menu/main_menu.xml" value="0.3625" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/menu/menu.xml" value="0.3569230769230769" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/menu/menu_mood.xml" value="0.3569230769230769" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/xml/preference.xml" value="0.3229166666666667" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/xml/preference_water.xml" value="0.3229166666666667" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/xml/tabs.xml" value="0.3229166666666667" />
+        <entry key="..\:/Users/Administrator/Desktop/Habit/app/src/main/res/xml/walk_preference.xml" value="0.1762917933130699" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="1.8" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ProjectJDKs.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
+  </component>
+</project>

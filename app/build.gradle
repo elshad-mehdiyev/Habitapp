@@ -1,0 +1,84 @@
+apply plugin: 'com.android.application'
+apply plugin: 'kotlin-android'
+apply plugin: 'com.google.firebase.firebase-perf'
+
+android {
+    compileSdkVersion 31
+    ndkVersion '21.2.6472646'
+    defaultConfig {
+        applicationId "com.example.habit.tracker"
+        minSdkVersion 23
+        targetSdkVersion 31
+        versionCode 1
+        versionName "1.0"
+        renderscriptSupportModeEnabled true
+
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    buildFeatures {
+        viewBinding true
+    }
+}
+
+dependencies {
+    implementation 'androidx.coordinatorlayout:coordinatorlayout:1.2.0'
+    implementation 'com.google.android.material:material:1.5.0'
+    implementation 'com.google.firebase:firebase-auth:21.0.1'
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    def preference_version = "1.2.0"
+    implementation fileTree(dir: 'libs', include: ['*.jar'])
+    //noinspection GradleDependency
+    implementation"org.jetbrains.kotlin:kotlin-stdlib-jdk7:$kotlin_version"
+    implementation 'androidx.appcompat:appcompat:1.4.1'
+    implementation 'androidx.core:core-ktx:1.7.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.3'
+    implementation 'androidx.cardview:cardview:1.0.0'
+    testImplementation 'junit:junit:4.13.2'
+    androidTestImplementation 'androidx.test.ext:junit:1.1.3'
+    androidTestImplementation 'androidx.test.espresso:espresso-core:3.4.0'
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'com.google.firebase:firebase-analytics:20.1.0'
+    implementation 'com.google.android.gms:play-services-ads:20.6.0'
+    implementation 'jp.wasabeef:blurry:4.0.0'
+    implementation 'com.evernote:android-job:1.4.2'
+    implementation 'me.zhanghai.android.materialprogressbar:library:1.6.1'
+    implementation "androidx.preference:preference-ktx:$preference_version"
+
+    def work_version = "2.4.0"
+    def room_version = "2.4.2"
+    def kodein_version = "6.5.5"
+
+    // Kotlin + coroutines
+    //noinspection GradleDependency
+    implementation "androidx.work:work-runtime-ktx:$work_version"
+
+    implementation platform('com.google.firebase:firebase-bom:26.5.0')
+    implementation 'com.google.firebase:firebase-analytics-ktx'
+    implementation 'com.google.firebase:firebase-perf-ktx'
+    implementation 'com.github.arthurhub:android-image-cropper:2.8.0'
+    implementation 'com.github.literakl:MaterialSeekBarPreference:2.3.0_SUPPORT_2600_1'
+    implementation 'com.github.bumptech.glide:glide:4.12.0'
+    annotationProcessor 'com.github.bumptech.glide:compiler:4.12.0'
+    implementation 'com.github.AAChartModel:AAChartCore-Kotlin:-SNAPSHOT'
+    implementation 'com.github.jarrodholliday:waveloadingview:v0.2.0'
+    // Coroutines
+    implementation 'org.jetbrains.kotlinx:kotlinx-coroutines-core:1.5.2'
+    implementation "org.jetbrains.kotlinx:kotlinx-coroutines-android:1.5.2"
+    // Room and Architectural Components
+    implementation "androidx.room:room-runtime:$room_version"
+    implementation "androidx.legacy:legacy-support-v4:1.0.0"
+    implementation 'androidx.lifecycle:lifecycle-extensions:2.2.0'
+    implementation 'androidx.lifecycle:lifecycle-viewmodel-ktx:2.4.1'
+    implementation "androidx.room:room-ktx:2.4.2"
+    // Kodein
+    implementation "org.kodein.di:kodein-di-generic-jvm:$kodein_version"
+    implementation "org.kodein.di:kodein-di-framework-android-x:$kodein_version"
+    implementation 'com.github.Akshay-Katariya:CurveBottomBar:1.0'
+}

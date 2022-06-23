@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#30d5c8</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="sari">#e2d810</color>
+    <color name="mavi">#e0b6db</color>
+    <color name="milky">#f2f1e9</color>
+    <color name="blue">#1268d9</color>
+    <color name="silver">#c2c3be</color>
+    <color name="gainsboro">#cfe6d9</color>
+    <color name="royalBlue">#4f65d5</color>
+    <color name="white">#ffffff</color>
+    <color name="ivory">#fffff0</color>
+    <color name="textcolor">#000000</color>
+    <color name="check">#077b8a</color>
+    <color name="clock">#ffffff</color>
+    <color name="purple">#592dea</color>
+    <color name="emerald">#2BBB66</color>
+    <color name="prussianblue">#2D4168</color>
+    <color name="midnightblue">#092e4b</color>
+    <color name="airforceblue">#778DB2</color>
+    <color name="graphite">#383428</color>
+    <color name="sea">#a2d9ff</color>
+    <color name="juicy">#ff9100</color>
+    <color name="red">#ffff4444</color>
+    <color name="mountain">#74626a</color>
+    <color name="pomodoro_white">#ebe7da</color>
+    <color name="book">#e8d1b2</color>
+</resources>

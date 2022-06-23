@@ -1,0 +1,33 @@
+<resources>
+    <string name="app_name">Habitapp</string>
+    <string name="Good">habits</string>
+    <string name="bubble1">bubble1</string>
+    <string name="add2">add2</string>
+    <string name="bubble4">bubble4</string>
+    <string name="add1">add1</string>
+    <string name="bubble2">bubble2</string>
+    <string name="add3">add3</string>
+    <string name="bubble3">bubble3</string>
+    <string name="add4">add4</string>
+    <string name="add_Headline">Goal name</string>
+    <string name="button">Button</string>
+    <string name="textview">TextView</string>
+    <string name="unchecked">unchecked</string>
+    <string name="checked">checked</string>
+    <string name="text2">text2</string>
+    <string name="percent_1">0%</string>
+    <string name="goal">New Goal</string>
+    <string name="add">Add Habit</string>
+    <string name="ready">ready</string>
+    <string name="cancel">Cancel</string>
+    <string name="remind">Reminder</string>
+    <string name="set">set</string>
+    <string name="time">Time:</string>
+    <string name="delete1">delete1</string>
+    <string name="delete2">delete2</string>
+    <string name="delete3">delete3</string>
+    <string name="delete4">delete4</string>
+    <string name="notification_channel_description">notify_description</string>
+    <string name="darkmode">dark</string>
+    <string name="security">security</string>
+</resources>

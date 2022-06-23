@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#30d5c8</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="sari">#e2d810</color>
+    <color name="mavi">#e0b6db</color>
+    <color name="milky">#f2f1e9</color>
+    <color name="blue">#1268d9</color>
+    <color name="silver">#c2c3be</color>
+    <color name="gainsboro">#696969</color>
+    <color name="royalBlue">#4f65d5</color>
+    <color name="white">#000000</color>
+    <color name="textcolor">#faebd7</color>
+    <color name="check">#7cfc00</color>
+    <color name="clock">#cfe6d9</color>
+</resources>

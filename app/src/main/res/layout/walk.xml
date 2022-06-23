@@ -1,0 +1,385 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/prussianblue">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/walk_goal_screen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="59dp"
+        android:layout_marginTop="371dp"
+        android:layout_marginEnd="60dp"
+        android:layout_marginBottom="371dp"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <EditText
+            android:id="@+id/edit_goal_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="4dp"
+            android:layout_marginBottom="26dp"
+            android:ems="10"
+            android:gravity="center"
+            android:hint="2500"
+            android:inputType="number"
+            android:maxLength="8"
+            android:textColor="@color/clock"
+            android:textColorHint="@color/common_google_signin_btn_text_light_focused"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/save_goal_count"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <Button
+            android:id="@+id/save_goal_count"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="48dp"
+            android:background="@drawable/good_button"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="Save"
+            android:textAllCaps="false"
+            android:textColor="@color/midnightblue"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/cancel_goal_count"
+            app:layout_constraintTop_toBottomOf="@+id/edit_goal_count" />
+
+        <Button
+            android:id="@+id/cancel_goal_count"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="26dp"
+            android:background="@drawable/button_background"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="Cancel"
+            android:textAllCaps="false"
+            android:textColor="@color/midnightblue"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/save_goal_count"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/edit_goal_count" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/walk_main_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible">
+
+        <me.itangqi.waveloadingview.WaveLoadingView
+            android:id="@+id/wave_drink"
+            android:layout_width="280dp"
+            android:layout_height="390dp"
+
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.496"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.258"
+            app:wlv_borderColor="@color/white"
+            app:wlv_borderWidth="3dp"
+            app:wlv_progressValue="0"
+            app:wlv_shapeType="circle"
+            app:wlv_titleBottomColor="@color/blue"
+            app:wlv_titleBottomSize="24sp"
+            app:wlv_titleCenterColor="@android:color/background_light"
+            app:wlv_titleCenterSize="24sp"
+            app:wlv_titleTopColor="@android:color/background_light"
+            app:wlv_titleTopSize="24sp"
+            app:wlv_waveAmplitude="75"
+            app:wlv_waveColor="@color/emerald" />
+
+        <TextView
+            android:id="@+id/stepvalue"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="0"
+            android:textColor="@color/clock"
+            android:textSize="50sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toBottomOf="@+id/wave_drink"
+            app:layout_constraintEnd_toEndOf="@+id/wave_drink"
+            app:layout_constraintStart_toStartOf="@+id/wave_drink"
+            app:layout_constraintTop_toTopOf="@+id/wave_drink" />
+
+        <TextView
+            android:id="@+id/textView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="76dp"
+            android:text="Goal: "
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/wave_drink"
+            app:layout_constraintEnd_toStartOf="@+id/step_goal_count"
+            app:layout_constraintStart_toStartOf="@+id/wave_drink"
+            app:layout_constraintTop_toTopOf="@+id/wave_drink"
+            app:layout_constraintVertical_bias="0.185" />
+
+        <TextView
+            android:id="@+id/step_goal_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="88dp"
+            android:text="1000"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/wave_drink"
+            app:layout_constraintEnd_toEndOf="@+id/wave_drink"
+            app:layout_constraintStart_toEndOf="@+id/textView"
+            app:layout_constraintTop_toTopOf="@+id/wave_drink"
+            app:layout_constraintVertical_bias="0.185" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Step"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="@+id/wave_drink"
+            app:layout_constraintEnd_toEndOf="@+id/wave_drink"
+            app:layout_constraintStart_toStartOf="@+id/wave_drink"
+            app:layout_constraintTop_toTopOf="@+id/wave_drink"
+            app:layout_constraintVertical_bias="0.701" />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout3"
+            android:layout_width="130dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="4dp"
+            android:layout_marginBottom="204dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayout5"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/wave_drink"
+            app:layout_constraintVertical_bias="0.294"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/imageView4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/km"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_location_on_24" />
+
+            <TextView
+                android:id="@+id/km"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginEnd="9dp"
+                android:layout_marginBottom="16dp"
+                android:text="0.95"
+                android:textColor="@color/clock"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView36"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+
+            <TextView
+                android:id="@+id/textView36"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="12dp"
+                android:text="km"
+                android:textColor="@color/clock"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/km"
+                app:layout_constraintTop_toBottomOf="@+id/imageView4" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout5"
+            android:layout_width="130dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="1dp"
+            android:layout_marginEnd="1dp"
+            android:layout_marginBottom="204dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/constraintLayout4"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/wave_drink"
+            app:layout_constraintVertical_bias="0.294"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/kcal_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/kcal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_local_fire_department_24" />
+
+            <TextView
+                android:id="@+id/kcal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="5dp"
+                android:layout_marginBottom="16dp"
+                android:text="0.95"
+                android:textColor="@color/clock"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/textView37"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/kcal_image" />
+
+            <TextView
+                android:id="@+id/textView37"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="12dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="12dp"
+                android:text="Kcal"
+                android:textColor="@color/clock"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/kcal"
+                app:layout_constraintTop_toBottomOf="@+id/kcal_image" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/constraintLayout4"
+            android:layout_width="130dp"
+            android:layout_height="104dp"
+            android:layout_marginStart="132dp"
+            android:layout_marginBottom="204dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.533"
+            app:layout_constraintStart_toEndOf="@+id/constraintLayout3"
+            app:layout_constraintTop_toBottomOf="@+id/wave_drink"
+            app:layout_constraintVertical_bias="0.294"
+            tools:visibility="visible">
+
+            <ImageView
+                android:id="@+id/time_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="54dp"
+                android:layout_marginTop="16dp"
+                android:layout_marginEnd="55dp"
+                android:layout_marginBottom="12dp"
+                app:layout_constraintBottom_toTopOf="@+id/simpleChronometer"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_timer_24" />
+
+            <Chronometer
+                android:id="@+id/simpleChronometer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="25dp"
+                android:layout_marginEnd="25dp"
+                android:layout_marginBottom="16dp"
+                android:textColor="@color/white"
+                android:textSize="24sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/time_image" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <Button
+            android:id="@+id/button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="153dp"
+            android:layout_marginTop="42dp"
+            android:layout_marginEnd="153dp"
+            android:layout_marginBottom="205dp"
+            android:background="@drawable/resume"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Walk"
+            android:textAllCaps="false"
+            android:textColor="@color/midnightblue"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/constraintLayout5" />
+
+        <Button
+            android:id="@+id/set_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="125dp"
+            android:layout_marginTop="68dp"
+            android:layout_marginEnd="125dp"
+            android:layout_marginBottom="36dp"
+            android:background="@drawable/resume"
+            android:paddingStart="20dp"
+            android:paddingEnd="20dp"
+            android:text="Set  Goal"
+            android:textAllCaps="false"
+            android:textColor="@color/midnightblue"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/wave_drink"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <ImageView
+            android:id="@+id/walk_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="355dp"
+            android:layout_marginTop="8dp"
+            android:layout_marginEnd="17dp"
+            android:layout_marginBottom="400dp"
+            app:layout_constraintBottom_toTopOf="@+id/constraintLayout4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_baseline_person_24" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

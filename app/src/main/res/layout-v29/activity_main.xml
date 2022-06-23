@@ -1,0 +1,361 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:background="@color/gainsboro"
+    android:forceDarkAllowed="true"
+    android:foregroundGravity="center"
+    tools:context=".MainActivity"
+    tools:ignore="Overdraw">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/constraintLayout10"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/save_drink"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/imageView"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_marginStart="175dp"
+            android:layout_marginTop="27dp"
+            android:layout_marginEnd="176dp"
+            android:background="@drawable/ic_check_black_24dp"
+            android:padding="6dp"
+            app:layout_constraintBottom_toTopOf="@+id/textView61"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_ba_l_qs_z_dizayn__11_" />
+
+        <TextView
+            android:id="@+id/textView61"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="108dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="108dp"
+            android:layout_marginBottom="1dp"
+            android:text="Hello, Elshad"
+            android:textColor="@color/midnightblue"
+            android:textSize="34sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/imageView" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout2"
+        android:layout_width="match_parent"
+        android:layout_height="78dp"
+        android:layout_marginTop="24dp"
+        android:foregroundGravity="center_horizontal"
+        android:gravity="center_horizontal"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/constraintLayout10">
+
+        <HorizontalScrollView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:foregroundGravity="center_horizontal"
+            android:scrollbars="none">
+
+            <LinearLayout
+                android:id="@+id/addinglayout"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+
+                <RelativeLayout
+                    android:id="@+id/mood_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="15dp" />
+
+                <RelativeLayout
+                    android:id="@+id/drink_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp">
+
+
+                    <ImageView
+                        android:id="@+id/imageView48"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/save_drink"
+                        app:srcCompat="@drawable/drink_icon" />
+
+                    <TextView
+                        android:id="@+id/textView48"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView48"
+                        android:layout_centerHorizontal="true"
+                        android:text="Drinking" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/meditation_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView36"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/pomodoro_button"
+                        app:srcCompat="@drawable/meditation_icon" />
+
+                    <TextView
+                        android:id="@+id/textView38"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView36"
+                        android:layout_centerHorizontal="true"
+                        android:foregroundGravity="clip_horizontal"
+                        android:gravity="center"
+                        android:text="Meditate" />
+
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/gratitude_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="20dp">
+
+                    <ImageView
+                        android:id="@+id/imageView37"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                        android:background="@drawable/button_background"
+                        app:srcCompat="@drawable/ic_ads_z_tasar_m__4_" />
+
+                    <TextView
+                        android:id="@+id/textView41"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView37"
+                        android:layout_centerHorizontal="true"
+                        android:text="Gratitude" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/call_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="17dp">
+
+                    <ImageView
+                        android:id="@+id/imageView40"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/mood_border_text"
+                        app:srcCompat="@drawable/call_friend" />
+
+                    <TextView
+                        android:id="@+id/textView57"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView40"
+                        android:text="Call Friend" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/walk_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="13dp">
+
+                    <ImageView
+                        android:id="@+id/imageView41"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/button_background"
+                        app:srcCompat="@drawable/ic_ads_z_tasar_m__3_" />
+
+                    <TextView
+                        android:id="@+id/textView58"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView41"
+                        android:text="Pedometer" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/pomodoro_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="14dp">
+
+                    <ImageView
+                        android:id="@+id/imageView42"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/button_background"
+                        app:srcCompat="@drawable/pomodoro" />
+
+                    <TextView
+                        android:id="@+id/textView59"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView42"
+                        android:text="Pomodoro" />
+                </RelativeLayout>
+
+                <RelativeLayout
+                    android:id="@+id/motivation_icon"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_marginStart="14dp"
+                    android:layout_marginEnd="15dp">
+
+                    <ImageView
+                        android:id="@+id/imageView45"
+                        android:layout_width="60dp"
+                        android:layout_height="55dp"
+                        android:layout_centerHorizontal="true"
+                        android:background="@drawable/drink_button"
+                        app:srcCompat="@drawable/quota" />
+
+                    <TextView
+                        android:id="@+id/textView60"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/imageView45"
+                        android:text="Motivation" />
+                </RelativeLayout>
+
+
+            </LinearLayout>
+        </HorizontalScrollView>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/habits_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="32dp"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/linearLayout2">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="80dp"
+            android:layout_marginStart="25dp"
+            android:layout_marginEnd="25dp"
+            android:background="@drawable/circular_button"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView29"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="15dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="15dp"
+                android:background="@drawable/ic_check_black_24dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/habit_text1"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                tools:srcCompat="@drawable/ic_exercise" />
+
+            <TextView
+                android:id="@+id/habit_text1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="27dp"
+                android:layout_marginEnd="7dp"
+                android:layout_marginBottom="26dp"
+                android:text="read  book and "
+                android:textColor="@color/midnightblue"
+                android:textSize="20sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@+id/imageView32"
+                app:layout_constraintStart_toEndOf="@+id/imageView29"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.0" />
+
+            <ImageView
+                android:id="@+id/imageView32"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical"
+                android:layout_marginTop="25dp"
+                android:layout_marginBottom="25dp"
+                android:layout_weight="0"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toEndOf="@+id/habit_text1"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/ic_baseline_edit_24" />
+
+            <CheckBox
+                android:id="@+id/habit_check1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="24dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="24dp"
+                android:minWidth="48dp"
+                android:minHeight="48dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/bottom_navigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/book"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:menu="@menu/main_menu"
+        tools:layout_editor_absoluteX="0dp" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/add_habit"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginBottom="24dp"
+        app:backgroundTint="@color/check"
+        app:layout_constraintBottom_toTopOf="@+id/bottom_navigation"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.952"
+        app:layout_constraintStart_toStartOf="parent"
+        app:srcCompat="@drawable/ic_baseline_add_24"
+        tools:ignore="SpeakableTextPresentCheck" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

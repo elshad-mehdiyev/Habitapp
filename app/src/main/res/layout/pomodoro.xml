@@ -1,0 +1,913 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/pomodoro_background"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:keepScreenOn="true"
+    tools:visibility="visible">
+
+    <TextView
+        android:id="@+id/pomodoro_timer"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="116dp"
+        android:layout_marginTop="212dp"
+        android:layout_marginEnd="116dp"
+        android:text="25 : 00"
+        android:textAllCaps="true"
+        android:textColor="@color/clock"
+        android:textSize="60sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pomodoro_buttons"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="51dp"
+        android:layout_marginTop="133dp"
+        android:layout_marginEnd="51dp"
+        android:visibility="gone"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.473"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pomodoro_timer"
+        tools:visibility="gone">
+
+        <Button
+            android:id="@+id/continue_pomodoro"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="3dp"
+            android:layout_marginEnd="14dp"
+            android:background="@drawable/drink_button"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="Continue"
+            android:textAllCaps="false"
+            android:textColor="@color/clock"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/stop_pomodoro"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="1.0" />
+
+        <Button
+            android:id="@+id/stop_pomodoro"
+            android:layout_width="130dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="3dp"
+            android:background="@drawable/mood_border_text"
+            android:paddingStart="15dp"
+            android:paddingEnd="15dp"
+            android:text="Stop"
+            android:textAllCaps="false"
+            android:textColor="@color/clock"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/continue_pomodoro"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <ImageView
+        android:id="@+id/pomodoro_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="327dp"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="16dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/setting_pomodoro"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/pomodoro_setting_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ebe7da"
+        android:visibility="gone"
+        tools:layout_editor_absoluteX="-16dp"
+        tools:layout_editor_absoluteY="0dp"
+        tools:visibility="gone">
+
+
+        <TextView
+            android:id="@+id/textView35"
+            android:layout_width="137dp"
+            android:layout_height="27dp"
+            android:layout_marginTop="92dp"
+            android:background="@drawable/button_background"
+            android:paddingStart="40dp"
+            android:paddingEnd="40dp"
+            android:text="Timer"
+            android:textAllCaps="true"
+            android:textColor="@color/clock"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/pomodoro_short_break"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0" />
+
+        <ImageView
+            android:id="@+id/imageView19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="80dp"
+            android:layout_marginBottom="17dp"
+            app:layout_constraintBottom_toTopOf="@+id/pomodoro_short_break"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.362"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/ic_timer" />
+
+        <ImageView
+            android:id="@+id/pomodoro_back"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="32dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="325dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:srcCompat="@drawable/pomodoro_back" />
+
+        <EditText
+            android:id="@+id/pomodoro_session"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="95dp"
+            android:layout_marginEnd="16dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/pomodoro_button"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingTop="12dp"
+            android:text="25"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/pomodoro_daily_goals"
+            app:layout_constraintEnd_toStartOf="@+id/pomodoro_short_break"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pomodoro_back" />
+
+        <EditText
+            android:id="@+id/pomodoro_short_break"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/pomodoro_button"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingTop="12dp"
+            android:text="5"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/pomodoro_daily_goals"
+            app:layout_constraintEnd_toStartOf="@+id/pomodoro_long_break"
+            app:layout_constraintStart_toEndOf="@+id/pomodoro_session"
+            app:layout_constraintTop_toBottomOf="@+id/imageView19" />
+
+        <EditText
+            android:id="@+id/pomodoro_long_break"
+            android:layout_width="105dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/pomodoro_button"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingTop="12dp"
+            android:text="15"
+            android:textSize="30sp"
+            app:layout_constraintBottom_toTopOf="@+id/pomodoro_round"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pomodoro_short_break" />
+
+        <EditText
+            android:id="@+id/pomodoro_daily_goals"
+            android:layout_width="165dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="23dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="17dp"
+            android:background="@drawable/pomodoro_button"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingTop="12dp"
+            android:text="4"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toStartOf="@+id/pomodoro_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/pomodoro_session" />
+
+        <EditText
+            android:id="@+id/pomodoro_round"
+            android:layout_width="165dp"
+            android:layout_height="100dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="23dp"
+            android:background="@drawable/pomodoro_button"
+            android:ems="10"
+            android:gravity="center_horizontal"
+            android:inputType="number"
+            android:maxLength="2"
+            android:paddingTop="12dp"
+            android:text="2"
+            android:textSize="30sp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/pomodoro_daily_goals"
+            app:layout_constraintTop_toBottomOf="@+id/pomodoro_short_break" />
+
+        <TextView
+            android:id="@+id/textView24"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SESSIONS"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pomodoro_session"
+            app:layout_constraintEnd_toEndOf="@+id/pomodoro_session"
+            app:layout_constraintStart_toStartOf="@+id/pomodoro_session"
+            app:layout_constraintTop_toTopOf="@+id/pomodoro_session"
+            app:layout_constraintVertical_bias="0.773" />
+
+        <TextView
+            android:id="@+id/textView29"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SHORT BREAKS"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pomodoro_short_break"
+            app:layout_constraintEnd_toEndOf="@+id/pomodoro_short_break"
+            app:layout_constraintStart_toStartOf="@+id/pomodoro_short_break"
+            app:layout_constraintTop_toTopOf="@+id/pomodoro_short_break"
+            app:layout_constraintVertical_bias="0.773" />
+
+        <TextView
+            android:id="@+id/textView30"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="LONG BREAKS"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pomodoro_long_break"
+            app:layout_constraintEnd_toEndOf="@+id/pomodoro_long_break"
+            app:layout_constraintStart_toStartOf="@+id/pomodoro_long_break"
+            app:layout_constraintTop_toTopOf="@+id/pomodoro_long_break"
+            app:layout_constraintVertical_bias="0.773" />
+
+        <TextView
+            android:id="@+id/textView31"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="DAILY GOALS"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pomodoro_daily_goals"
+            app:layout_constraintEnd_toEndOf="@+id/pomodoro_daily_goals"
+            app:layout_constraintStart_toStartOf="@+id/pomodoro_daily_goals"
+            app:layout_constraintTop_toTopOf="@+id/pomodoro_daily_goals"
+            app:layout_constraintVertical_bias="0.821" />
+
+        <TextView
+            android:id="@+id/textView32"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="SESSIONS TO LONG BREAK"
+            android:textSize="12sp"
+            app:layout_constraintBottom_toBottomOf="@+id/pomodoro_round"
+            app:layout_constraintEnd_toEndOf="@+id/pomodoro_round"
+            app:layout_constraintStart_toStartOf="@+id/pomodoro_round"
+            app:layout_constraintTop_toTopOf="@+id/pomodoro_round"
+            app:layout_constraintVertical_bias="0.821" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/round_and_goal"
+        android:layout_width="411dp"
+        android:layout_height="134dp"
+        android:background="@color/pomodoro_white"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible">
+
+        <TextView
+            android:id="@+id/current_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="39dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginBottom="43dp"
+            android:text="1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/defined_goal"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <TextView
+            android:id="@+id/textView33"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="72dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="23dp"
+            android:layout_marginBottom="7dp"
+            android:text="ROUND"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/current_round"
+            app:layout_constraintEnd_toStartOf="@+id/imageView12"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView34"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="28dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginEnd="82dp"
+            android:text="Goal"
+            android:textAllCaps="true"
+            android:textSize="18sp"
+            app:layout_constraintBottom_toTopOf="@+id/current_goal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/imageView12"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/defined_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="19dp"
+            android:layout_marginEnd="44dp"
+            android:layout_marginBottom="46dp"
+            android:text="/2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/imageView12"
+            app:layout_constraintStart_toEndOf="@+id/current_round"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/current_round"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="84dp"
+            android:layout_marginBottom="45dp"
+            android:text="1"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/defined_round"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView33" />
+
+        <TextView
+            android:id="@+id/defined_goal"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="93dp"
+            android:layout_marginBottom="44dp"
+            android:text="/4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/current_goal"
+            app:layout_constraintTop_toBottomOf="@+id/textView34" />
+
+        <ImageView
+            android:id="@+id/imageView12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="6dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/textView34"
+            app:layout_constraintStart_toEndOf="@+id/textView33"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            app:srcCompat="@drawable/ic_noun_vertical_line" />
+
+        <TextView
+            android:id="@+id/pomodoro_goal_completed"
+            android:layout_width="208dp"
+            android:layout_height="133dp"
+            android:layout_marginTop="1dp"
+            android:background="@color/emerald"
+            android:gravity="center"
+            android:text="Daily Goal  Completed"
+            android:textColor="@color/clock"
+            android:textSize="30sp"
+            android:visibility="gone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0"
+            tools:visibility="gone" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <Button
+        android:id="@+id/start_focus"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="129dp"
+        android:layout_marginTop="136dp"
+        android:layout_marginEnd="129dp"
+        android:background="@drawable/drink_button"
+        android:paddingStart="15dp"
+        android:paddingEnd="15dp"
+        android:text="Start  to  Focus"
+        android:textAllCaps="false"
+        android:textColor="@color/milky"
+        android:textSize="18sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pomodoro_timer"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/music_pomodoro"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginEnd="136dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/music_pomodoro_text"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/strict_mode_pomodoro"
+        app:layout_constraintTop_toBottomOf="@+id/pomodoro_timer"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_noun_music_1211251"
+        tools:visibility="visible" />
+
+    <ImageView
+        android:id="@+id/strict_mode_pomodoro"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_marginStart="136dp"
+        android:layout_marginEnd="59dp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/strict_mode_pomodoro_text"
+        app:layout_constraintEnd_toStartOf="@+id/music_pomodoro"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/pomodoro_timer"
+        app:layout_constraintVertical_bias="1.0"
+        app:srcCompat="@drawable/ic_noun_meditation_51613"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/strict_mode_pomodoro_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:layout_marginBottom="40dp"
+        android:text="Strict Mode"
+        android:textColor="@color/clock"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/round_and_goal"
+        app:layout_constraintEnd_toStartOf="@+id/music_pomodoro_text"
+        app:layout_constraintStart_toStartOf="parent"
+        tools:visibility="visible" />
+
+    <TextView
+        android:id="@+id/music_pomodoro_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="29dp"
+        android:layout_marginEnd="118dp"
+        android:layout_marginBottom="40dp"
+        android:text="White Noise"
+        android:textColor="@color/clock"
+        android:textSize="12sp"
+        android:visibility="visible"
+        app:layout_constraintBottom_toTopOf="@+id/round_and_goal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@+id/strict_mode_pomodoro_text"
+        tools:visibility="visible" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/music_pomodoro_menu"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="39dp"
+        android:layout_marginBottom="25dp"
+        android:background="@color/midnightblue"
+        android:visibility="gone"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:visibility="gone">
+
+        <TextView
+            android:id="@+id/textView42"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="74dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="74dp"
+            android:text="White Noise"
+            android:textColor="@color/clock"
+            android:textSize="30sp"
+            android:textStyle="bold"
+            app:layout_constraintBottom_toTopOf="@+id/textView43"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <TextView
+            android:id="@+id/textView43"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="8dp"
+            android:text="None"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView44"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView42" />
+
+        <TextView
+            android:id="@+id/textView44"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Tic-Tac"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView45"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView43" />
+
+        <TextView
+            android:id="@+id/textView45"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Countdown"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView46"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView44" />
+
+        <TextView
+            android:id="@+id/textView46"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Wind"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView47"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView45" />
+
+        <TextView
+            android:id="@+id/textView47"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Wilderness"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView49"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView46" />
+
+        <TextView
+            android:id="@+id/textView49"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Stream"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView50"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView47" />
+
+        <TextView
+            android:id="@+id/textView50"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Ocean Shore"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView51"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView49" />
+
+        <TextView
+            android:id="@+id/textView51"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Rain"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView52"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView50" />
+
+        <TextView
+            android:id="@+id/textView52"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Cafe"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView53"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView51" />
+
+        <TextView
+            android:id="@+id/textView53"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Bonfire"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView54"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView52" />
+
+        <TextView
+            android:id="@+id/textView54"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Birds in Morning"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView55"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView53" />
+
+        <TextView
+            android:id="@+id/textView55"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:text="Bird and Stream"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView56"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView54" />
+
+        <TextView
+            android:id="@+id/textView56"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="26dp"
+            android:layout_marginTop="18dp"
+            android:layout_marginBottom="59dp"
+            android:text="Waterfall"
+            android:textColor="@color/clock"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/textView55" />
+
+        <TextView
+            android:id="@+id/music_pomodoro_confirm"
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginStart="199dp"
+            android:layout_marginEnd="28dp"
+            android:layout_marginBottom="1dp"
+            android:text="Confirm"
+            android:textColor="@color/red"
+            android:textSize="24sp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton23" />
+
+        <RadioButton
+            android:id="@+id/radioButton11"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="180dp"
+            android:layout_marginTop="64dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton12"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView43"
+            app:layout_constraintTop_toTopOf="parent" />
+
+        <RadioButton
+            android:id="@+id/radioButton12"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="159dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton13"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView44"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton11" />
+
+        <RadioButton
+            android:id="@+id/radioButton13"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="115dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton14"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView45"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton12" />
+
+        <RadioButton
+            android:id="@+id/radioButton14"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="183dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton15"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView46"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton13" />
+
+        <RadioButton
+            android:id="@+id/radioButton15"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="119dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton16"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView47"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton14" />
+
+        <RadioButton
+            android:id="@+id/radioButton16"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="159dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton17"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView49"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton15" />
+
+        <RadioButton
+            android:id="@+id/radioButton17"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="101dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton18"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView50"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton16" />
+
+        <RadioButton
+            android:id="@+id/radioButton18"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="190dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton19"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView51"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton17" />
+
+        <RadioButton
+            android:id="@+id/radioButton19"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="188dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton20"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView52"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton18" />
+
+        <RadioButton
+            android:id="@+id/radioButton20"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="162dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton21"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView53"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton19" />
+
+        <RadioButton
+            android:id="@+id/radioButton21"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="65dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton22"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView54"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton20" />
+
+        <RadioButton
+            android:id="@+id/radioButton22"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="68dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/radioButton23"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView55"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton21" />
+
+        <RadioButton
+            android:id="@+id/radioButton23"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="142dp"
+            android:layout_marginBottom="18dp"
+            android:buttonTint="@color/clock"
+            android:text="   "
+            android:textSize="24sp"
+            app:layout_constraintBottom_toTopOf="@+id/music_pomodoro_confirm"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/textView56"
+            app:layout_constraintTop_toBottomOf="@+id/radioButton22" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

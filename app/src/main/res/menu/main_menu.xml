@@ -1,0 +1,18 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/statistics"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_data_exploration_24"
+        android:title="Statistics"/>
+    <item
+        android:id="@+id/habits"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:title="Habits" />
+    <item
+        android:id="@+id/academy"
+        android:enabled="true"
+        android:icon="@drawable/learn"
+        android:title="Academy" />
+</menu>

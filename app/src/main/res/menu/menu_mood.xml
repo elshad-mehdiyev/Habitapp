@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@android:color/black">
+    <item
+        android:id="@+id/drink_home"
+        android:color="@android:color/holo_blue_light"
+        android:icon="@drawable/ic_baseline_home_24"
+        android:enabled="true"
+        android:title="@string/home" />
+    <item
+        android:id="@+id/drink_history"
+        android:color="@color/emerald"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_emoji_emotions_24"
+        android:title="Increase" />
+    <item
+        android:id="@+id/drink_settings"
+        android:color="@color/gainsboro"
+        android:enabled="true"
+        android:icon="@drawable/ic_baseline_settings_24"
+        android:title="@string/setting" />
+</menu>

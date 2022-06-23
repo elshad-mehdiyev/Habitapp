@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Habitapp</string>
+    <string name="Good">習慣</string>
+    <string name="add_Headline">目標名稱</string>
+    <string name="add">"養成習慣 "</string>
+    <string name="coming_soon">" 不久"</string>
+    <string name="notify_title">"匆忙 "</string>
+    <string name="notify_content">" 今天有任務要做"</string>
+</resources>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Habitapp</string>
+    <string name="Good">Alışkanlıklar</string>
+    <string name="add_Headline">Alışkanlık  İsmi</string>
+    <string name="add">Alışkanlık  Ekle</string>
+    <string name="coming_soon">YAKINDA</string>
+    <string name="notify_title">Acele Et !</string>
+    <string name="notify_content">" Bugün yapılması gereken görevler var"</string>
+</resources>

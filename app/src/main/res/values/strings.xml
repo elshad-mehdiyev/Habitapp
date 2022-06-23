@@ -1,0 +1,100 @@
+<resources>
+    <string name="app_name">Habitapp</string>
+    <string name="Good">habits</string>
+    <string name="bubble1" translatable="false">bubble1</string>
+    <string name="add2" translatable="false">add2</string>
+    <string name="bubble4" translatable="false">bubble4</string>
+    <string name="add1" translatable="false">add1</string>
+    <string name="bubble2" translatable="false">bubble2</string>
+    <string name="add3" translatable="false">add3</string>
+    <string name="bubble3" translatable="false">bubble3</string>
+    <string name="add4" translatable="false">add4</string>
+    <string name="add_Headline">Goal name</string>
+    <string name="button" translatable="false">Button</string>
+    <string name="textview" translatable="false">TextView</string>
+    <string name="unchecked" translatable="false">unchecked</string>
+    <string name="checked" translatable="false">checked</string>
+    <string name="text2" translatable="false">text2</string>
+    <string name="percent_1" translatable="false">0%</string>
+    <string name="goal" translatable="false">New Goal</string>
+    <string name="add">Add Habit</string>
+    <string name="ready" translatable="false">ready</string>
+    <string name="cancel" translatable="false">Cancel</string>
+    <string name="remind" translatable="false">Reminder</string>
+    <string name="set" translatable="false">set</string>
+    <string name="time" translatable="false">Time:</string>
+    <string name="delete1" translatable="false">delete1</string>
+    <string name="delete2" translatable="false">delete2</string>
+    <string name="delete3" translatable="false">delete3</string>
+    <string name="delete4" translatable="false">delete4</string>
+    <string name="notification_channel_description" translatable="false">notify_description</string>
+    <string name="darkmode" translatable="false">dark</string>
+    <string name="security" translatable="false">security</string>
+    <string name="back" translatable="false">back</string>
+    <string name="comingsoon" translatable="false">Coming Soon</string>
+    <string name="coming_soon">COMING SOON</string>
+    <string name="soon" translatable="false">soon</string>
+    <string name="notify_title"> Hurry!</string>
+    <string name="notify_content">There are tasks to be done today</string>
+    <string name="single_task" translatable="false">single</string>
+    <string name="Premium" translatable="false">Premium</string>
+    <string name="premium" translatable="false">premium</string>
+    <string name="water_quota" translatable="false">
+        Cartilage, found in joints and the disks of the spine, contains around 80 percent water.
+        Long-term dehydration can reduce the joints’ shock-absorbing ability, leading to joint pain.
+    </string>
+    <string name="water_quota1" translatable="false">
+        Saliva helps us digest our food and keeps the mouth, nose, and eyes moist. This prevents friction and damage.
+        Drinking water also keeps the mouth clean. Consumed instead of sweetened beverages, it can also reduce tooth decay.
+    </string>
+    <string name="water_quota2" translatable="false">
+        Blood is more than 90 percent water, and blood carries oxygen to different parts of the body.
+    </string>
+    <string name="resume" translatable="false">resume</string>
+    <string name="play" translatable="false">play</string>
+    <string name="pausewalk" translatable="false">pause</string>
+    <string name="home" translatable="false">Home</string>
+    <string name="setting" translatable="false">Setting</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment" translatable="false">Hello blank fragment</string>
+    <string name="gender" translatable="false">male</string>
+    <string name="weight" translatable="false">Weight</string>
+    <string name="height" translatable="false">Height</string>
+    <string name="wake_up" translatable="false">Wake up time</string>
+    <string name="bed_time" translatable="false">Bed time</string>
+    <string name="interval" translatable="false">Interval</string>
+    <string name="exercise" translatable="false">Exercise time</string>
+
+    <string name="quota1" translatable="false">The Best Way To Get Started Is To Quit Talking And Begin Doing.</string>
+    <string name="quota2" translatable="false">The Pessimist Sees Difficulty In Every Opportunity. The Optimist Sees Opportunity In Every Difficulty.</string>
+    <string name="quota3" translatable="false">Don’t Let Yesterday Take Up Too Much Of Today.</string>
+    <string name="quota4" translatable="false">You Learn More From Failure Than From Success. Don’t Let It Stop You. Failure Builds Character.</string>
+    <string name="quota5" translatable="false">It’s Not Whether You Get Knocked Down, It’s Whether You Get Up.</string>
+    <string name="quota6" translatable="false">If You Are Working On Something That You Really Care About, You Don’t Have To Be Pushed. The Vision Pulls You.</string>
+    <string name="quota7" translatable="false">People Who Are Crazy Enough To Think They Can Change The World, Are The Ones Who Do.</string>
+    <string name="quota8" translatable="false">Failure Will Never Overtake Me If My Determination To Succeed Is Strong Enough.</string>
+    <string name="quota9" translatable="false">Entrepreneurs Are Great At Dealing With Uncertainty And Also Very Good At Minimizing Risk. That’s The Classic Entrepreneur.</string>
+    <string name="quota10" translatable="false">We May Encounter Many Defeats But We Must Not Be Defeated.</string>
+    <string name="quota11" translatable="false">Knowing Is Not Enough; We Must Apply. Wishing Is Not Enough; We Must Do.</string>
+    <!-- TODO: Meditation  quota-->
+    <string name="meditation1" translatable="false">
+       Meditation is something that anyone can do at anytime and anywhere
+    </string>
+    <string name="meditation2" translatable="false">
+       Meditation is something
+    </string>
+    <string name="meditation3" translatable="false">
+       Meditation is something that anyone can
+    </string>
+    <string name="meditation4" translatable="false">
+       Meditation is something that anyone can do at
+    </string>
+    <string name="meditation5" translatable="false">
+       Meditation is
+    </string>
+    <string name="header1" translatable="false">Just do it</string>
+    <string name="header2" translatable="false">Just</string>
+    <string name="header3" translatable="false">do it</string>
+    <string name="header4" translatable="false">it</string>
+    <string name="header5" translatable="false">Just do it just</string>
+</resources>
