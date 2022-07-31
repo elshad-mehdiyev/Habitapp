@@ -1,24 +1,16 @@
 # Habitapp
-                                                                  Drink  Water  module
-
-![Screenshot_2022-06-29-19-11-09-323_com example habit tracker](https://user-images.githubusercontent.com/108083618/176475183-d63054a1-95b7-4a10-b9b4-45a316eec58d.jpg)
-
-                                                                  Step Counter  module
-
-![Screenshot_2022-06-29-19-11-42-514_com example habit tracker](https://user-images.githubusercontent.com/108083618/176475190-37bfe665-d28f-4844-8ab9-839aa9d77588.jpg)
-
-                                                                  Pomodoro module
-
-![Screenshot_2022-06-29-19-11-47-258_com example habit tracker](https://user-images.githubusercontent.com/108083618/176475193-e204a509-f7ed-47af-87e3-40fc31d7f7ad.jpg)
-
-                                                                   Gratitude journal
-
-![Screenshot_2022-06-29-19-11-28-973_com example habit tracker](https://user-images.githubusercontent.com/108083618/176475198-a06f7cbd-7225-4dcd-ab26-c8d422d7f0cf.jpg)
-
-                                                                Motivation quota  module
-
-![Screenshot_2022-06-29-19-11-58-861_com example habit tracker](https://user-images.githubusercontent.com/108083618/176475208-77d5c2df-4ede-4062-9300-68f3a6ce0d5c.jpg)
-
-                                                                  Meditation  module
-
-![Screenshot_2022-06-29-19-11-19-546_com example habit tracker](https://user-images.githubusercontent.com/108083618/176475211-f57da5a9-401a-4025-8f67-649d83182380.jpg)
+This  app  offers  users  track  all  day  activities. 
+# Main Screen  for  track  new  habit
+![Screenshot_2022-07-31-19-45-22-343_com example habit tracker](https://user-images.githubusercontent.com/108083618/182034468-927ba17f-76c3-4f22-b799-f03326e64666.jpg)
+# Create  new  Habit  screen
+![Screenshot_2022-07-31-19-44-19-166_com example habit tracker](https://user-images.githubusercontent.com/108083618/182034471-a0c520bc-0970-431a-9f9b-da53ed1a75bc.jpg)
+# Meditation  screen
+![Screenshot_2022-07-31-19-43-10-891_com example habit tracker](https://user-images.githubusercontent.com/108083618/182034474-99d46f9d-9f91-49ad-91d4-8f09064bbe42.jpg)
+# Step Counter  Screen
+![Screenshot_2022-07-31-19-44-00-887_com example habit tracker](https://user-images.githubusercontent.com/108083618/182034476-35aeeac3-9af2-48bc-bf77-a3d40a8252bc.jpg)
+# Pomodoro timer  screen
+![Screenshot_2022-07-31-19-44-09-177_com example habit tracker](https://user-images.githubusercontent.com/108083618/182034574-c1321342-426b-4363-8d84-c14412263f08.jpg)
+# Water intake screen
+![Screenshot_2022-07-31-19-43-07-300_com example habit tracker](https://user-images.githubusercontent.com/108083618/182034588-eda00da8-321e-42c4-9898-51ef80a10aaf.jpg)
+# Gratitude Journal  screen
+![Screenshot_2022-07-31-19-43-19-056_com example habit tracker](https://user-images.githubusercontent.com/108083618/182034601-c06c0ae5-6665-4a81-b7bf-32c82118cd41.jpg)
